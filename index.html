@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Salida por WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Video de Presentación -->
+    <div id="videoContainer">
+        <video id="introVideo" autoplay muted>
+            <source src="presentación.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+    </div>
+
+    <!-- Página Principal (Oculta inicialmente) -->
+    <div id="mainContent" style="display: none;">
+        <video autoplay muted loop>
+            <source src="panda.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+
+        <div class="container">
+            <h1>Confirmación de Salida por WhatsApp</h1>
+
+            <form id="confirmationForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" required>
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="confirmButton">Aceptar</button>
+                    <button type="button" id="declineButton">Rechazar</button>
+                </div>
+            </form>
+
+            <div id="result"></div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Marcos Castillo. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
